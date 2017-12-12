@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff101010" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+    <RelativeLayout android:id="@+id/sub_layout1" android:background="#ff505050" android:paddingLeft="50.0dip" android:paddingRight="50.0dip" android:layout_width="fill_parent" android:layout_height="280dip" android:layout_alignParentBottom="true">
+    	<Button android:id="@+id/settings_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ui_settings_btn" android:layout_marginBottom="20dip" android:layout_alignParentBottom="true" />
+    	<Button android:id="@+id/mobcam2_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ui_mobcam2_btn" android:layout_marginBottom="20dip" android:layout_above="@id/settings_btn" />
+    	<Button android:id="@+id/mobcam_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ui_mobcam_btn" android:layout_marginBottom="20dip" android:layout_above="@id/mobcam2_btn" />
+    </RelativeLayout>
+    
+    
+    <RelativeLayout android:id="@+id/sub_layout2" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/sub_layout1" >
+    	<ImageView android:id="@+id/logo_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/logo" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+	</RelativeLayout>
+
+</RelativeLayout>

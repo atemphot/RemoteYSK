@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">云视控服务</string>
+    <string name="app_lang">zh</string>
+    
+    <string name="notification_title">云视控</string>
+    <string name="notification_message">云视控服务正在运行</string>
+    
+    <string name="ui_ok_btn">确定</string>
+    <string name="ui_cancel_btn">取消</string>
+    <string name="ui_yes_btn">是</string>
+    <string name="ui_no_btn">否</string>
+    <string name="msg_communication_error">网络通信错误，请检查网络设置后重试</string>
+    <string name="msg_internet_error">无法访问英特网，请检查网络设置</string>
+    <string name="msg_please_wait">请等待。。。</string>
+    
+    <string name="ui_mobcam_btn">启动服务 》》</string>
+    <string name="ui_mobcam2_btn">退出服务 》》</string>
+    <string name="ui_settings_btn">功能设置 》》</string>
+    <string name="msg_no_camera">该设备没有摄像头，无法启动受控端程序</string>
+    <string name="msg_enable_location">为了实现定位追踪功能，请开启受控手机的GPS定位和无线网络定位</string>
+    
+	<string name="msg_not_available">[不可用]</string>
+	<string name="msg_display_mobcam_id">该受控端ID是“%1$d”，点击[设置]按钮后可以看到</string>
+	<string name="msg_not_approved_please_buy">软件非授权或者已过试用期，不能继续使用，请付费购买！</string>
+	
+	<string-array name="red_alarm_type_items">
+        <item>烟雾火警感应器</item>
+        <item>煤气泄漏探测器</item>
+        <item>门磁感应</item>
+        <item>窗磁感应1</item>
+        <item>窗磁感应2</item>
+        <item>红外人体感应器1</item>
+        <item>红外人体感应器2</item>
+        <item>红外人体感应器</item>
+    </string-array>
+	
+	<string name="msg_sms_acce_alarm">报警短信：异常被拿动，触发报警！</string>
+	<string name="msg_sms_red_alarm_format">报警短信：安防探测器[%1$s]触发报警！</string>
+	<string name="msg_sms_power_percent_format">报告：受控端手机的电池剩余电量为“%1$s”</string>
+	<string name="msg_unknown_val">未知值</string>
+	<string name="msg_sms_cmd_result_0">很抱歉，您发过来的指令[%1$s]我不认识，无法执行。</string>
+	<string name="msg_sms_cmd_result">您发的指令[%1$s]我已执行。</string>
+	<string name="msg_sms_cmd_result_enabled">开</string>
+	<string name="msg_sms_cmd_result_disabled">关</string>
+	<string name="msg_sms_cmd_query_result_format">报告：受控端ID是“%1$s”，WiFi状态：%2$s，电池剩余电量：%3$s</string>
+	<string name="msg_sms_location_format">位置 %1$s</string>
+	<string name="msg_unknown_location">暂时无法获取定位信息，请稍后重试。</string>
+	<string name="msg_phonenum_cleared">已经清除主控手机号码，以后不再有短信控制功能。</string>
+	
+	<string name="msg_sms_cmd_arm">BF</string>
+	<string name="msg_sms_cmd_disarm">CF</string>
+	<string name="msg_sms_cmd_location">WZ</string>
+	<string name="msg_sms_cmd_query">CX</string>
+	<string name="msg_sms_cmd_restart">CQ</string>
+	<string name="msg_sms_cmd_power_percent">DL</string>
+	<string name="msg_sms_cmd_enable_wifi">KW</string>
+	<string name="msg_sms_cmd_disable_wifi">GW</string>
+	<string name="msg_sms_cmd_enable_email">KE</string>
+	<string name="msg_sms_cmd_disable_email">GE</string>
+	<string name="msg_sms_cmd_set_name">MC</string>
+	<string name="msg_sms_cmd_set_pass">MM</string>
+	<string name="msg_sms_cmd_clear_phonenum">QH</string>
+	
+	<string name="ui_tab_basic">基本设置</string>
+	<string name="ui_tab_advanced">高级设置</string>
+	<string name="ui_tab_phone">接收邮箱和电话</string>
+	<string name="msg_save_settings_or_not">是否保存刚才更改的设置？</string>
+	
+	<string name="ui_text_mobcam_id_0">【受控端ID：尚未获取】</string>
+	<string name="ui_text_mobcam_id_1">【受控端ID：%1$d】</string>
+	<string name="ui_text_mobcam_name">请为该受控端取个名：（昵称）</string>
+	<string name="ui_text_mobcam_password">请为该受控端设置连接密码：</string>
+	<string name="ui_checkbox_auto_start">手机开机后自动启动后台服务</string>
+	<string name="ui_checkbox_hide_ui">隐藏UI界面、隐藏弹出提示和设置信息，不再振动，完全后台静默工作</string>
+	<string name="msg_level_too_low_for_allow_hide">您的ID权限不够，这次可以隐藏，下次启动后将不再隐藏。需要升级ID权限请联系官方客服\r\nQQ1：478046502  \r\nQQ2：1795782702</string>
+	<string name="ui_text_cap_method">截屏方式：</string>
+	<string name="ui_text_cap_method_auto">auto</string>
+	<string name="ui_text_cap_method_adb">adb</string>
+	<string name="ui_text_cap_method_flinger">flinger</string>
+	<string name="ui_text_cap_method_fb">fb</string>
+	<string name="ui_text_video_enc">视频硬编码方式：</string>
+	<string name="ui_video_enc_a">默认</string>
+	<string name="ui_video_enc_b">硬编码1</string>
+	<string name="ui_video_enc_c">硬编码2</string>
+	<string name="ui_checkbox_video_uv">视频硬编码UV分量调换（红蓝调换）</string>
+	<string name="ui_checkbox_with_uav">控制无人机、无人车/船（有APM/Pixhawk飞控）</string>
+	<string name="ui_checkbox_with_tail_sitter">带垂直起降控制器（只用于鱼鹰M飞机）</string>
+	<string name="ui_text_sw_gpsalti">上升多少米后可以切平飞（鱼鹰M）</string>
+	<string name="ui_text_sw_gndspeed">地速大于多少厘米每秒后可以切平飞（鱼鹰M）</string>
+	<string name="ui_btn_search_bt">选择配对蓝牙设备（与Arduino控制板）</string>
+	<string name="ui_text_no_bt_addr">尚未选择配对蓝牙设备</string>
+	<string name="msg_no_bluetooth_adapter">该安卓机子上没有蓝牙，请选择其它串口通信方式</string>
+	<string name="ui_checkbox_enable_sr">开启语音识别和摄像头图像识别</string>
+	<string name="ui_checkbox_enable_red_alarm">开启安防报警功能</string>
+	<string name="ui_text_red_alarm_method">请选择报警的通知方式：</string>
+	<string name="ui_select_method_email">发送电子邮件</string>
+	<string name="ui_select_method_sms">发送短信</string>
+	<string name="ui_text_serial_port_dev">请指定与APM/Pixhawk连接的串口设备：（使用蓝牙或FT311D时请留空）</string>
+	<string name="ui_text_qx_app_key">千寻FindCM服务的AppKey:（不用千寻时请留空）</string>
+	<string name="ui_text_qx_app_secret">千寻FindCM服务的AppSecret:（不用千寻时请留空）</string>
+	
+	<string name="ui_checkbox_enable_email">开启电子邮件通知</string>
+	<string name="ui_text_email_address">发送电子邮件通知时的目标邮箱：</string>
+	<string name="ui_hint_email_address">请输入你的有效电子邮箱</string>
+	<string name="ui_text_email_tips">为了能接收到通知邮件，请先登录你设置的邮箱向云控制系统邮箱“admin@e2eye.com”发送一封邮件，邮件内容不限。之后，你就可以正常收到邮件通知了！</string>
+	<string name="ui_text_sms_phone_num">发送短信通知时的目标号码：</string>
+	<string name="ui_hint_sms_phone_num">最多设置3个手机号码，用分号“;”分隔</string>
+	
+	<string name="ui_select_bluetooth_device">安卓机子与下位控制板通过蓝牙串口通信，请从下面搜索到的蓝牙设备中选出下位控制板对应的那一个。如果搜索不到，请检查下位控制板是否接通电源。</string>
+	<string name="ui_bt_search_btn">重新搜索蓝牙设备</string>
+	<string name="msg_bt_device_not_set">设置了使用蓝牙串口，但是并未设置要连接的蓝牙设备</string>
+	<string name="msg_bt_search_start">开始搜索蓝牙设备。。。</string>
+	<string name="msg_bt_connect_ok">蓝牙设备连接成功！</string>
+	
+	<string name="msg_on_sms_sent_format">%1$s 通知：[%2$s]发出短信给%3$s(%4$s)：%5$s</string>
+	<string name="msg_on_sms_recv_format">%1$s 通知：[%2$s]%3$s(%4$s)发来短信：%5$s</string>
+	<string name="msg_on_call_out_format">%1$s 通知：[%2$s]打出电话给%3$s(%4$s)</string>
+	<string name="msg_on_call_in_format" >%1$s 通知：[%2$s]%3$s(%4$s)打进电话</string>
+	<string name="msg_on_call_in_accepted_format" >%1$s 通知：[%2$s]%3$s(%4$s)打进的电话，已接听</string>
+	<string name="msg_on_call_in_missed_format"   >%1$s 通知：[%2$s]%3$s(%4$s)打进的电话，未接</string>
+	<string name="msg_on_call_in_rejected_format" >%1$s 通知：[%2$s]%3$s(%4$s)打进的电话，拒接</string>
+	
+	<string name="msg_on_client_connected">网灵云控制：控制端建立了连接</string>
+	<string name="msg_on_client_disconnected">网灵云控制：控制端断开了连接</string>
+	<string name="msg_on_service_created">网灵云控制：后台服务已启动</string>
+	<string name="msg_on_service_destroyed">网灵云控制：后台服务已退出</string>
+	
+	<string name="msg_on_camid_ok">%1$s 提醒：上线了（受控端ID是%2$d）</string>
+	<string name="msg_on_camid_ok_suffix">注意该受控端手机是Android-4.4版本或以上，后台收发短信无法隐藏，请清理短信记录，尽量不要使用短信控制功能。</string>
+	<string name="msg_on_camid_ng">%1$s 提醒：免费试用期已过，失去VIP权限，升级ID权限请联系客服[QQ:478046502 QQ:1795782702]（受控端ID是%2$d）</string>
+	
+	<string name="sr_nijiaoshenmemingzi">你叫什么名字</string>
+	<string name="sr_jiqiguanjia">机器管家</string>
+	<string name="sr_nihao">你好</string>
+	<string name="sr_guolai">过来</string>
+	<string name="sr_genwozou">跟我走</string>
+	<string name="sr_woaini">我爱你</string>
+	<string name="sr_zoukai">走开</string>
+	<string name="sr_qianjin">前进</string>
+	<string name="sr_houtui">后退</string>
+	<string name="sr_zuozhuan">左转</string>
+	<string name="sr_youzhuan">右转</string>
+	<string name="sr_xiangzuo">向左</string>
+	<string name="sr_xiangyou">向右</string>
+	<string name="sr_xiangzuozhuan">向左转</string>
+	<string name="sr_xiangyouzhuan">向右转</string>
+	<string name="sr_tingzhi">停止</string>
+	<string name="sr_taitou">抬头</string>
+	<string name="sr_ditou">低头</string>
+	<string name="sr_quchongdian">去充电</string>
+	<string name="sr_kanshoushi">看手势</string>
+	<string name="sr_kaikongtiao">开空调</string>
+	<string name="sr_zhileng">制冷</string>
+	<string name="sr_zhire">制热</string>
+	<string name="sr_songfeng">送风</string>
+	<string name="sr_chushi">除湿</string>
+	<string name="sr_zidong">自动</string>
+	<string name="sr_guankongtiao">关空调</string>
+	<string name="sr_kaidianshi">开电视</string>
+	<string name="sr_guandianshi">关电视</string>
+	<string name="sr_jingyin">静音</string>
+	<string name="sr_yinliangjia">音量加</string>
+	<string name="sr_yinliangjian">音量减</string>
+	<string name="sr_pindaojia">频道加</string>
+	<string name="sr_pindaojian">频道减</string>
+	<string name="sr_kaifengshan">开风扇</string>
+	<string name="sr_guanfengshan">关风扇</string>
+	<string name="sr_kaichuanghu">开窗户</string>
+	<string name="sr_guanchuanghu">关窗户</string>
+	<string name="sr_kaichuanglian">开窗帘</string>
+	<string name="sr_guanchuanglian">关窗帘</string>
+	<string name="sr_kaideng">开灯</string>
+	<string name="sr_guandeng">关灯</string>
+	
+</resources>

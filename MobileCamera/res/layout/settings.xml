@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!--  第一个Tab对应的布局  -->
+	<LinearLayout android:id="@+id/id_layout_tab_basic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" >
+	<ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:orientation="vertical" >
+		<LinearLayout android:layout_width="fill_parent" android:layout_height="20dip" android:orientation="vertical" ></LinearLayout>
+		<Button android:id="@+id/id_btn_mobcam_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+		<TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ui_text_mobcam_name" />
+		<EditText android:textSize="15.0sp" android:id="@+id/id_edit_mobcam_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="" android:singleLine="true" android:maxLength="254" />
+		<TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ui_text_mobcam_password" />
+		<EditText android:textSize="15.0sp" android:id="@+id/id_edit_mobcam_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="" android:singleLine="true" android:maxLength="254" />
+    	
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="10dip" android:orientation="vertical" ></LinearLayout>
+    	<CheckBox android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffeeeeee" android:id="@+id/id_checkbox_auto_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_checkbox_auto_start" />
+        
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="10dip" android:orientation="vertical" ></LinearLayout>
+    	<CheckBox android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffeeeeee" android:id="@+id/id_checkbox_hide_ui" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_checkbox_hide_ui" />
+        
+		<LinearLayout android:layout_width="fill_parent" android:layout_height="15dip" android:orientation="vertical" ></LinearLayout>
+    	<TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffeeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_text_cap_method" />
+		<Spinner android:id="@+id/id_spinner_cap_method" android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+		
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="15dip" android:orientation="vertical" ></LinearLayout>
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffeeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_text_video_enc" />
+        <RadioGroup android:orientation="horizontal" android:id="@+id/radiogroup_video_enc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checkedButton="@+id/radio_video_enc_a">
+            <RadioButton android:id="@+id/radio_video_enc_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_video_enc_a" />
+            <RadioButton android:id="@+id/radio_video_enc_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_video_enc_b" />
+            <RadioButton android:id="@+id/radio_video_enc_c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_video_enc_c" />
+        </RadioGroup>
+        
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="10dip" android:orientation="vertical" ></LinearLayout>
+        <CheckBox android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffeeeeee" android:id="@+id/id_checkbox_video_uv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_checkbox_video_uv" />
+        
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="15dip" android:orientation="vertical" ></LinearLayout>
+    	<CheckBox android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffeeeeee" android:id="@+id/id_checkbox_with_uav" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_checkbox_with_uav" />
+        
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="10dip" android:orientation="vertical" ></LinearLayout>
+        <CheckBox android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffeeeeee" android:id="@+id/id_checkbox_with_tail_sitter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_checkbox_with_tail_sitter" />
+        
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffeeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_text_sw_gpsalti" />
+			<EditText android:textSize="15.0sp" android:id="@+id/id_edit_sw_gpsalti" android:layout_width="50dip" android:layout_height="wrap_content" android:text="" android:hint="" android:singleLine="true" android:numeric="integer" android:maxLength="5" />
+		</LinearLayout>
+		
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffeeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_text_sw_gndspeed" />
+			<EditText android:textSize="15.0sp" android:id="@+id/id_edit_sw_gndspeed" android:layout_width="50dip" android:layout_height="wrap_content" android:text="" android:hint="" android:singleLine="true" android:numeric="integer" android:maxLength="5" />
+		</LinearLayout>
+		
+    </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+
+
+	<!--  第二个Tab对应的布局  -->
+    <LinearLayout android:id="@+id/id_layout_tab_advanced" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" >
+	<ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:orientation="vertical">
+		
+		<LinearLayout android:layout_width="fill_parent" android:layout_height="20dip" android:orientation="vertical" ></LinearLayout>
+		<Button android:id="@+id/id_btn_search_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_btn_search_bt" />
+		<EditText android:textSize="15.0sp" android:id="@+id/id_edit_bt_addr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ui_text_no_bt_addr" android:hint="" android:singleLine="true" android:maxLength="254" />
+		
+		<LinearLayout android:layout_width="fill_parent" android:layout_height="35dip" android:orientation="vertical" ></LinearLayout>
+		<TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffeeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_text_serial_port_dev" />
+		<EditText android:textSize="15.0sp" android:id="@+id/id_edit_serial_port_dev" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="" android:singleLine="true" />
+		
+		<LinearLayout android:layout_width="fill_parent" android:layout_height="35dip" android:orientation="vertical" ></LinearLayout>
+		<TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffeeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_text_qx_app_key" />
+		<EditText android:textSize="15.0sp" android:id="@+id/id_edit_qx_app_key" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="" android:singleLine="true" />
+		<TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffeeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_text_qx_app_secret" />
+		<EditText android:textSize="15.0sp" android:id="@+id/id_edit_qx_app_secret" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="" android:singleLine="true" />
+		
+		<LinearLayout android:layout_width="fill_parent" android:layout_height="35dip" android:orientation="vertical" ></LinearLayout>
+		<CheckBox android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffeeeeee" android:id="@+id/id_checkbox_enable_red_alarm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_checkbox_enable_red_alarm" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffeeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_text_red_alarm_method" />
+		<Spinner android:id="@+id/id_spinner_red_alarm_method" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+		
+		<LinearLayout android:layout_width="fill_parent" android:layout_height="35dip" android:orientation="vertical" ></LinearLayout>
+		<CheckBox android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffeeeeee" android:id="@+id/id_checkbox_enable_sr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_checkbox_enable_sr" />
+		
+	</LinearLayout>
+	</ScrollView>
+    </LinearLayout>
+
+
+	<!--  第三个Tab对应的布局  -->
+    <LinearLayout android:id="@+id/id_layout_tab_phone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:orientation="vertical" >
+		<LinearLayout android:layout_width="fill_parent" android:layout_height="20dip" android:orientation="vertical" ></LinearLayout>
+    	<CheckBox android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffeeeeee" android:id="@+id/id_checkbox_enable_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_checkbox_enable_email" />
+        
+		<TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ui_text_email_address" />
+		<EditText android:textSize="15.0sp" android:id="@+id/id_edit_email_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/ui_hint_email_address" android:singleLine="true" />
+		
+		<TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ui_text_email_tips" />
+		
+		
+		<LinearLayout android:layout_width="fill_parent" android:layout_height="30dip" android:orientation="vertical" ></LinearLayout>
+		
+		<TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ui_text_sms_phone_num" />
+		<EditText android:textSize="15.0sp" android:id="@+id/id_edit_sms_phone_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/ui_hint_sms_phone_num" android:singleLine="false" />
+    </LinearLayout>
+
+</FrameLayout>
